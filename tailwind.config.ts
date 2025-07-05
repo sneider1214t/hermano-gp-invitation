@@ -66,7 +66,9 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'cfmoto-orange': 'hsl(var(--cfmoto-orange))',
+				'cfmoto-black': 'hsl(var(--cfmoto-black))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

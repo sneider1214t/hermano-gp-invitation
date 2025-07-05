@@ -9,15 +9,15 @@ const InvitationCard = () => {
   const { user, logout } = useAuth();
 
   const motoGPImages = [
-    "https://images.unsplash.com/photo-1558618047-3c8c93d2c04a", // MotoGP racing
-    "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f", // Motorcycle on track
-    "https://images.unsplash.com/photo-1558618189-fbd6cd06bf6a", // Racing motorcycle
-    "https://images.unsplash.com/photo-1567789884554-0b844b597180", // Motorcycle detail
-    "https://images.unsplash.com/photo-1449426468208-9de52a4b540d"  // Racing scene
+    "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&h=600&fit=crop", // MotoGP racing
+    "https://images.unsplash.com/photo-1449426468159-d96dbf08f19f?w=800&h=600&fit=crop", // Motorcycle on track
+    "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=600&fit=crop", // Racing motorcycle
+    "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800&h=600&fit=crop", // Motorcycle detail
+    "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=800&h=600&fit=crop"  // Racing scene
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/20 p-4 relative overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-cfmoto-orange/20 p-4 relative overflow-x-hidden">
       {/* Header with logout */}
       <div className="fixed top-4 right-4 z-50">
         <Button
@@ -33,13 +33,13 @@ const InvitationCard = () => {
 
       {/* Floating decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 left-10 text-primary/5 animate-float">
+        <div className="absolute top-10 left-10 text-cfmoto-orange/10 animate-float">
           <Bike size={100} />
         </div>
-        <div className="absolute top-1/4 right-20 text-primary/5 animate-float" style={{ animationDelay: '2s' }}>
+        <div className="absolute top-1/4 right-20 text-cfmoto-orange/10 animate-float" style={{ animationDelay: '2s' }}>
           <Star size={80} />
         </div>
-        <div className="absolute bottom-20 left-1/4 text-primary/5 animate-float" style={{ animationDelay: '4s' }}>
+        <div className="absolute bottom-20 left-1/4 text-cfmoto-orange/10 animate-float" style={{ animationDelay: '4s' }}>
           <Heart size={90} />
         </div>
       </div>
@@ -51,39 +51,39 @@ const InvitationCard = () => {
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <Heart className="h-8 w-8 text-red-500 animate-pulse" />
-              <Bike className="h-10 w-10 text-primary animate-float" />
+              <Bike className="h-10 w-10 text-cfmoto-orange animate-float" />
               <Heart className="h-8 w-8 text-red-500 animate-pulse" />
             </div>
             
-            <h1 className="text-5xl font-playfair golden-text mb-4 leading-tight">
+            <h1 className="text-5xl font-playfair cfmoto-gradient-text mb-4 leading-tight">
               ¡Hola, {user?.name}!
             </h1>
             
-            <div className="golden-gradient h-1 w-32 mx-auto rounded-full mb-6"></div>
+            <div className="cfmoto-gradient h-1 w-32 mx-auto rounded-full mb-6"></div>
             
             <p className="text-2xl text-foreground/90 font-light leading-relaxed">
-              Tengo algo <span className="golden-text font-semibold">muy especial</span> que proponerte...
+              Tengo algo <span className="cfmoto-gradient-text font-semibold">muy especial</span> que proponerte...
             </p>
           </div>
 
           {/* Main message */}
           <div className="text-center mb-12 space-y-6">
             <p className="text-xl text-foreground/80 leading-relaxed max-w-3xl mx-auto">
-              Como sabes, hay pocos momentos en la vida que son realmente <span className="golden-text font-semibold">únicos e irrepetibles</span>. 
+              Como sabes, hay pocos momentos en la vida que son realmente <span className="cfmoto-gradient-text font-semibold">únicos e irrepetibles</span>. 
               Y creo que ha llegado el momento perfecto para vivir uno de esos momentos juntos.
             </p>
             
-            <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-2xl border border-primary/20">
-              <p className="text-2xl font-playfair golden-text mb-4">
+            <div className="bg-gradient-to-r from-cfmoto-orange/10 to-cfmoto-black/10 p-6 rounded-2xl border border-cfmoto-orange/20">
+              <p className="text-2xl font-playfair cfmoto-gradient-text mb-4">
                 Te invito a ir conmigo al MotoGP
               </p>
               <div className="flex items-center justify-center space-x-4 text-foreground/70">
                 <div className="flex items-center space-x-2">
-                  <Calendar className="h-5 w-5 text-primary" />
+                  <Calendar className="h-5 w-5 text-cfmoto-orange" />
                   <span>Una experiencia inolvidable</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <MapPin className="h-5 w-5 text-primary" />
+                  <MapPin className="h-5 w-5 text-cfmoto-orange" />
                   <span>Juntos como hermanos</span>
                 </div>
               </div>
@@ -91,14 +91,14 @@ const InvitationCard = () => {
 
             <p className="text-lg text-foreground/80 leading-relaxed max-w-2xl mx-auto">
               Sé que ambos amamos la velocidad, la adrenalina y esos momentos de pura emoción. 
-              Pero más que eso, <span className="golden-text font-semibold">valoro enormemente cada momento que compartimos</span> y 
+              Pero más que eso, <span className="cfmoto-gradient-text font-semibold">valoro enormemente cada momento que compartimos</span> y 
               creo que esta sería una experiencia que recordaremos para siempre.
             </p>
           </div>
 
           {/* Photo gallery */}
           <div className="mb-12">
-            <h3 className="text-2xl font-playfair golden-text text-center mb-8">
+            <h3 className="text-2xl font-playfair cfmoto-gradient-text text-center mb-8">
               Esto es lo que nos espera...
             </h3>
             
@@ -106,16 +106,17 @@ const InvitationCard = () => {
               {motoGPImages.map((image, index) => (
                 <div 
                   key={index} 
-                  className="group relative overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in"
+                  className="group relative overflow-hidden rounded-2xl aspect-[4/3] animate-fade-in border border-cfmoto-orange/20"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <img
                     src={image}
                     alt={`MotoGP Experience ${index + 1}`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 bg-gradient-to-t from-cfmoto-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute bottom-4 left-4 text-cfmoto-orange opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <Bike className="h-6 w-6" />
                   </div>
                 </div>
@@ -125,11 +126,11 @@ const InvitationCard = () => {
 
           {/* YouTube video section */}
           <div className="mb-12">
-            <h3 className="text-2xl font-playfair golden-text text-center mb-8">
+            <h3 className="text-2xl font-playfair cfmoto-gradient-text text-center mb-8">
               Un mensaje especial para ti
             </h3>
             
-            <div className="relative aspect-video rounded-2xl overflow-hidden glass-card p-4">
+            <div className="relative aspect-video rounded-2xl overflow-hidden glass-card p-4 border border-cfmoto-orange/20">
               <iframe
                 className="w-full h-full rounded-xl"
                 src="https://www.youtube.com/embed/l30nGMNqYjQ"
@@ -143,8 +144,8 @@ const InvitationCard = () => {
 
           {/* Emotional closing message */}
           <div className="text-center space-y-6">
-            <div className="bg-gradient-to-r from-secondary/20 to-accent/20 p-8 rounded-2xl border border-secondary/30">
-              <p className="text-xl font-playfair golden-text mb-4">
+            <div className="bg-gradient-to-r from-cfmoto-orange/20 to-cfmoto-black/20 p-8 rounded-2xl border border-cfmoto-orange/30">
+              <p className="text-xl font-playfair cfmoto-gradient-text mb-4">
                 "Los mejores momentos no se miden en tiempo, sino en las emociones que nos hacen sentir vivos"
               </p>
               
@@ -160,17 +161,17 @@ const InvitationCard = () => {
               </div>
             </div>
 
-            <div className="golden-gradient h-1 w-48 mx-auto rounded-full"></div>
+            <div className="cfmoto-gradient h-1 w-48 mx-auto rounded-full"></div>
             
-            <p className="text-2xl font-playfair golden-text">
+            <p className="text-2xl font-playfair cfmoto-gradient-text">
               ¿Te animas a vivir esta aventura conmigo?
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-8">
-              <Button className="golden-gradient text-black font-semibold px-8 py-3 text-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-primary/25">
+              <Button className="cfmoto-gradient text-white font-semibold px-8 py-3 text-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-cfmoto-orange/25">
                 ¡Por supuesto que sí! 🏍️
               </Button>
-              <Button variant="outline" className="glass-card hover:bg-secondary/20 px-8 py-3 text-lg transition-all duration-300">
+              <Button variant="outline" className="glass-card hover:bg-cfmoto-orange/20 border-cfmoto-orange/30 px-8 py-3 text-lg transition-all duration-300">
                 Necesito pensarlo 🤔
               </Button>
             </div>
