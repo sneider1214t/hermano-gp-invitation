@@ -157,7 +157,7 @@ const InvitationCard = () => {
               </div>
             </div>
 
-            {/* YouTube section with crazy styling */}
+            {/* YouTube section with updated video */}
             <div className="mb-12">
               <h3 className="text-4xl font-playfair bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent text-center mb-8 font-black animate-pulse">
                 🎥 UN MENSAJE SÚPER ESPECIAL 🎥
@@ -166,8 +166,8 @@ const InvitationCard = () => {
               <div className="relative aspect-video rounded-3xl overflow-hidden bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-2xl p-6 border-4 border-gradient-to-r from-purple-400 to-pink-400 shadow-2xl shadow-pink-500/50 animate-scale-in transform hover:scale-105 transition-all duration-300">
                 <iframe
                   className="w-full h-full rounded-2xl border-2 border-cyan-400"
-                  src="https://www.youtube.com/embed/l30nGMNqYjQ"
-                  title="MotoGP - The Ultimate Racing Experience"
+                  src="https://www.youtube.com/embed/7CyyNhO-Uu4"
+                  title="MotoGP - Racing Experience"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
